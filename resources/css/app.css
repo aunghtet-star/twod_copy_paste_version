@@ -1,0 +1,12 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.icons {
+    font-size: 15px;
+    padding: 3px;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+
+.icons:hover {
+    background: #becfeb;
+}
