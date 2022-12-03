@@ -77,12 +77,12 @@ export default {
 
             axios.post('/api/normal-two',two).then(
                 res => {
-                    console.log('success')
+                    this.sum();
+                    this.two = ''
                 }
             )
 
-            this.sum();
-            this.two = ''
+
         },
         sum(){
             axios.get('/api/normal-two-overview').then(res => {
