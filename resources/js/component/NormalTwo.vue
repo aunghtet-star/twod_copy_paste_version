@@ -5,13 +5,12 @@
             <div class="col-md-6">
                 <div class="card shadow" >
                     <div class="card-body">
-                        <form @submit.prevent="normalTwo">
                             <div class="mb-3">
                                 <label for="" class="form-label">Please Enter</label>
                                 <textarea class="form-control" id="" v-model="two" name="twos" rows="15"></textarea>
                             </div>
-                            <button type="submit" class="float-end btn btn-primary">Enter</button>
-                        </form>
+                            <button @click="normalTwo" class="float-end btn btn-primary">Enter</button>
+
                     </div>
                 </div>
             </div>
