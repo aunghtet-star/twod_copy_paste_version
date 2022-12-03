@@ -16,9 +16,9 @@
             </div>
             <div class="col-md-6">
                 <div  style="min-height: 80vh">
-                    <div class="row mt-5" style="font-size: 15px">
-                        <div class="col-6" v-for="(two,index) in overview" :key="index">
-                            <span  class="px-3" :class="two.total > brake_amount ? 'text-success' : ''" style="width: 20px">{{two.two}} - {{two.total}}</span>
+                    <div class="column mt-5" style="font-size: 15px">
+                        <div class="span" v-for="(two,index) in overview" :key="index">
+                            <span  class=" px-3" :class="two.total > brake_amount ? 'text-success' : ''" style="width: 20px">{{two.two}} - {{two.total}}</span>
                         </div>
                     </div>
                 </div>
@@ -44,6 +44,19 @@
     </div>
 </template>
 
+<style>
+.column {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+     column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+.span {
+    display: block;
+}
+</style>
 <script>
 import NavBar from './NavBar.vue'
 
