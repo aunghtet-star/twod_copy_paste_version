@@ -121,7 +121,7 @@ class NormalTwoController extends Controller
 
             if($htate === 'b'){
                 //$b = brake (1 brake,2 brake,etc)
-                $b = explode('B',$two);
+                $b = explode('b',$two);
                 foreach ($newTwo->break_round($two[0])->getData()->data as $data){
                     $response[] = [$data,$b[1]];
                 }
