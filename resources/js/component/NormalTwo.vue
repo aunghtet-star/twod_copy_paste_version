@@ -17,7 +17,7 @@
             </div>
             <div class="col-md-6">
                 <div  style="min-height: 80vh">
-                    <div class="row mt-5">
+                    <div class="row mt-5" style="font-size: 12px">
                         <div class="col-4" v-for="(two,index) in overview" :key="index">
                             <span  class="px-3" :class="two.total > brake_amount ? 'text-danger' : ''" style="width: 20px">{{two.two}} - {{two.total}}</span>
                         </div>
@@ -65,7 +65,7 @@ export default {
 
             axios.post('/api/normal-two',two).then(
                 res => {
-
+                    console.log('success')
                 }
             )
 
