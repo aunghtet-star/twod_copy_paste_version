@@ -16,13 +16,13 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div  style="min-height: 80vh">
-                    <div class="row mt-5" style="font-size: 15px">
-                        <div class="col-6" v-for="(two,index) in overview" :key="index">
-                            <span  class="px-3" :class="two.total > brake_amount ? 'text-success' : ''" style="width: 20px">{{two.two}} - {{two.total}}</span>
-                        </div>
-                    </div>
-                </div>
+<!--                <div  style="min-height: 80vh">-->
+<!--                    <div class="row mt-5" style="font-size: 15px">-->
+<!--                        <div class="col-6" v-for="(two,index) in overview" :key="index">-->
+<!--                            <span  class="px-3" :class="two.total > brake_amount ? 'text-success' : ''" style="width: 20px">{{two.two}} - {{two.total}}</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
 
                 <div class="d-flex justify-content-between my-5">
