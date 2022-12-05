@@ -138,7 +138,7 @@ class NormalTwoController extends Controller
             if($first_word === 'N'){
                 //$N = nat khat ()
                 $p = explode('N',$two);
-                foreach ($newTwo->natkhat()->getData()->data as $data){
+                foreach (['18','81','24','42','35','53','69','96','70','07'] as $data){
                     $response[] = [$data,$p[1]];
                 }
             }
@@ -146,7 +146,7 @@ class NormalTwoController extends Controller
             if($first_word === 'w'){
                 //$w = Power ()
                 $w = explode('w',$two);
-                foreach ($newTwo->power()->getData()->data as $data){
+                foreach (['05','50','16','61','27','72','38','83','49','94'] as $data){
                     $response[] = [$data,$w[1]];
                 }
             }
